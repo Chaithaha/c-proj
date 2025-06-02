@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GameFinder</a>
@@ -46,5 +47,19 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+=======
+        <nav>
+            <a href="/">Home</a>
+            <a href="/Game">Find Games</a>
+            <a href="/Game/About">About</a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <p>&copy; 2024 Game Finder</p>
+    </footer>
+>>>>>>> b31be0394889963e63c5c3177a03ade6da44f699
 </body>
 </html>
