@@ -1,31 +1,8 @@
-@model GameFinder.Models.GameSearchModel
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
 
-<div class="form-box">
-    <h2>Let's find you a game!</h2>
-    <form method="post">
-        <label>Genre:</label>
-        <select asp-for="Genre">
-            <option>Select a genre</option>
-            <option>Action</option>
-            <option>RPG</option>
-        </select>
-
-        <label>Category:</label>
-        <select asp-for="Category">
-            <option>Select a category</option>
-            <option>Strategy</option>
-            <option>Simulation</option>
-        </select>
-
-        <label>Platform:</label><br />
-        <input type="radio" asp-for="Platform" value="PC" /> PC<br />
-        <input type="radio" asp-for="Platform" value="PlayStation" /> PlayStation<br />
-        <input type="radio" asp-for="Platform" value="Xbox" /> Xbox<br />
-
-        <label>Format:</label><br />
-        <input type="radio" asp-for="Format" value="Single Player" /> Single Player<br />
-        <input type="radio" asp-for="Format" value="Multiplayer" /> Multiplayer<br />
-
-        <button type="submit">Submit</button>
-    </form>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
