@@ -1,0 +1,39 @@
+@model IEnumerable<GameFinder.Models.Game>
+
+@{
+    ViewData["Title"] = "Games List";
+}
+
+<h2>Games List</h2>
+
+<p>
+    <a href="/Games/Create">Add New Game</a>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Platform</th>
+            <th>Rating</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var game in Model)
+        {
+            <tr>
+                <td>@game.Title</td>
+                <td>@game.Genre</td>
+                <td>@game.Platform</td>
+                <td>@game.Rating</td>
+                <td>
+                    <a href="/Games/Details/@game.Id">View</a> |
+                    <a href="/Games/Edit/@game.Id">Edit</a> |
+                    <a href="/Games/Delete/@game.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

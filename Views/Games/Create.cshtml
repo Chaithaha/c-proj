@@ -1,0 +1,11 @@
+@model GameFinder.Models.Game
+
+<h2>Add Game</h2>
+<form asp-action="Create" method="post">
+    <p>Title: <input asp-for="Title" /></p>
+    <p>Genre: <input asp-for="Genre" /></p>
+    <p>Platform: <input asp-for="Platform" /></p>
+    <p>Rating: <input asp-for="Rating" /></p>
+    <button type="submit">Add</button>
+</form>
+<p><a href="/Games">Back to List</a></p>

@@ -1,0 +1,14 @@
+@model GameFinder.Models.Game
+
+<h2>Delete Game</h2>
+<p>Are you sure you want to delete this game?</p>
+<p>Title: @Model.Title</p>
+<p>Genre: @Model.Genre</p>
+<p>Platform: @Model.Platform</p>
+<p>Rating: @Model.Rating</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>
+<p><a href="/Games">Back to List</a></p>

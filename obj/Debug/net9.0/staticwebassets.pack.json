@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/chait/Downloads/GameFinder_Finale/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.GameFinder.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.GameFinder.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.GameFinder.props",
+      "PackagePath": "build\\GameFinder.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.GameFinder.props",
+      "PackagePath": "buildMultiTargeting\\GameFinder.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.GameFinder.props",
+      "PackagePath": "buildTransitive\\GameFinder.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

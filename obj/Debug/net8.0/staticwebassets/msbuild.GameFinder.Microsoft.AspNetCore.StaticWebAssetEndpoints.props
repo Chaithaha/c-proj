@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/GameFinder/css/site.5i3r9q72nm.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5i3r9q72nm"},{"Name":"integrity","Value":"sha256-g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD\u002Bgo="},{"Name":"label","Value":"_content/GameFinder/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1751"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD\u002Bgo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 02:15:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/GameFinder/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD\u002Bgo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1751"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD\u002Bgo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 02:15:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

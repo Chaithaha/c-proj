@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "uInfj/sPDQDB8es8zFz3CbrLA56yJw1pBskx7/mPBUE=",
+  "Source": "GameFinder",
+  "BasePath": "_content/GameFinder",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GameFinder/wwwroot",
+      "Source": "GameFinder",
+      "ContentRoot": "/Users/chait/Downloads/GameFinder_Finale/wwwroot/",
+      "BasePath": "_content/GameFinder",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/chait/Downloads/GameFinder_Finale/wwwroot/css/site.css",
+      "SourceId": "GameFinder",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/chait/Downloads/GameFinder_Finale/wwwroot/",
+      "BasePath": "_content/GameFinder",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5i3r9q72nm",
+      "Integrity": "g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD+go=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.5i3r9q72nm.css",
+      "AssetFile": "/Users/chait/Downloads/GameFinder_Finale/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1751"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD+go=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 02:15:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5i3r9q72nm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD+go="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/chait/Downloads/GameFinder_Finale/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1751"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD+go=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 02:15:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g3S8HJxFvJqjzRHdVbftM27YDu4ELXd3PZL8xyxD+go="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Game Finder</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <h1>Game Finder</h1>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Games" asp-action="Index">Games</a>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Game Finder</p>
+    </footer>
+</body>
+</html>
