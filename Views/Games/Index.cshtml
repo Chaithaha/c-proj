@@ -10,7 +10,7 @@
     <a href="/Games/Create">Add New Game</a>
 </p>
 
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>Title</th>
@@ -25,13 +25,13 @@
         {
             <tr>
                 <td>@game.Title</td>
-                <td>@game.Genre</td>
-                <td>@game.Platform</td>
+                <td>@game.Genre?.Name</td>
+                <td>@game.Platform?.Name</td>
                 <td>@game.Rating</td>
                 <td>
-                    <a href="/Games/Details/@game.Id">View</a> |
-                    <a href="/Games/Edit/@game.Id">Edit</a> |
-                    <a href="/Games/Delete/@game.Id">Delete</a>
+                    <a href="/Games/Details/@game.Id" class="action-view">View</a> |
+                    <a href="/Games/Edit/@game.Id" class="action-edit">Edit</a> |
+                    <a href="/Games/Delete/@game.Id" class="action-delete">Delete</a>
                 </td>
             </tr>
         }

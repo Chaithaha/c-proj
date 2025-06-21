@@ -4,23 +4,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Game Finder</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <h1>Game Finder</h1>
-        <nav>
-            <a asp-controller="Home" asp-action="Index">Home</a>
-            <a asp-controller="Games" asp-action="Index">Games</a>
-        </nav>
+        <div class="header-content">
+            <h1>Game Finder </h1>
+            <nav>
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                <a asp-controller="Games" asp-action="Index">Games</a>
+                <a asp-controller="Games" asp-action="GameRecs">Game Rec's</a>
+            </nav>
+        </div>
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <div class="header-user-area">
+                <partial name="_LoginPartial" />
+            </div>
+        }
     </header>
 
     <main>
-        @RenderBody()
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="main-content">
+                <partial name="_LoginPartial" />
+                <div class="page-content-box">
+                    @RenderBody()
+                </div>
+            </div>
+        }
+        else
+        {
+            @RenderBody()
+        }
     </main>
 
     <footer>
         <p>&copy; @DateTime.Now.Year - Game Finder</p>
     </footer>
+
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

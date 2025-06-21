@@ -1,11 +1,27 @@
 @model GameFinder.Models.Game
+@using Microsoft.AspNetCore.Mvc.Rendering
 
 <h2>Add Game</h2>
 <form asp-action="Create" method="post">
-    <p>Title: <input asp-for="Title" /></p>
-    <p>Genre: <input asp-for="Genre" /></p>
-    <p>Platform: <input asp-for="Platform" /></p>
-    <p>Rating: <input asp-for="Rating" /></p>
+    <p>Title: <input asp-for="Title" class="form-control" /></p>
+    <p>Genre:
+        <select asp-for="GenreId" class="form-control" asp-items="@(new SelectList(ViewBag.Genres, "Id", "Name"))">
+            <option value="">--Select Genre--</option>
+        </select>
+    </p>
+    <p>Platform:
+        <select asp-for="PlatformId" class="form-control" asp-items="@(new SelectList(ViewBag.Platforms, "Id", "Name"))">
+            <option value="">--Select Platform--</option>
+        </select>
+    </p>
+    <p>Rating:
+        <select asp-for="Rating" class="form-control">
+            <option value="">--Select Rating--</option>
+            @for (int i = 1; i <= 10; i++) {
+                <option value="@i">@i</option>
+            }
+        </select>
+    </p>
     <button type="submit">Add</button>
 </form>
 <p><a href="/Games">Back to List</a></p>

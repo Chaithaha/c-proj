@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameFinder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6368eb2f377714199b217025dd1e99bcb0535ee3")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameFinder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameFinder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

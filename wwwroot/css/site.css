@@ -1,4 +1,4 @@
-/* Basic reset and defaults */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,113 +6,369 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1200px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    line-height: 1.7;
+    color: #4B2E05;
+    background: #FFDAB9; /* Apricot brown */
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 32px 16px 16px 16px;
 }
 
 /* Header styles */
 header {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items in the center */
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid #8B5C2A;
+    background: rgba(255, 218, 185, 0.7);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 8px rgba(139, 92, 42, 0.05);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-user-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-user-area .nav-button {
+    background: transparent;
+    border: 1px solid #8B5C2A;
+    color: #4B2E05;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.header-user-area .nav-button:hover {
+    background: #8B5C2A;
+    color: #fff;
+}
+
+.user-greeting {
+    font-size: 0.9rem;
+    color: #4B2E05;
+}
+
+.button-logout {
+    background: transparent;
+    border: 1px solid #8B5C2A;
+    color: #4B2E05;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button-logout:hover {
+    background: #8B5C2A;
+    color: #fff;
 }
 
 header h1 {
-    margin-bottom: 1rem;
+    margin: 0;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    color: #8B5C2A;
+    letter-spacing: 2px;
+    font-family: 'Segoe Script', 'Comic Sans MS', cursive, sans-serif;
 }
 
 nav {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 
-nav a {
-    margin-right: 1rem;
-    color: #0066cc;
+.login-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Specific styling for navigation links */
+nav a, .nav-button {
+    color: #8B5C2A;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+nav a:hover, .nav-button:hover {
+    background: #8B5C2A;
+    color: #FFDAB9;
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* General styling for other links */
+main a {
+    color: #8B5C2A;
+    text-decoration: underline dotted;
+    transition: color 0.2s;
+}
+
+main a:hover {
+    color: #4B2E05;
+    text-decoration: underline solid;
 }
 
 /* Main content */
 main {
     min-height: 70vh;
+    margin-top: 2rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #8B5C2A;
+    margin: 2rem 0;
 }
 
 /* Footer styles */
 footer {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-    color: #666;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #8B5C2A;
+    color: #8B5C2A;
+    text-align: center;
+    font-size: 1rem;
+    background: rgba(255, 218, 185, 0.5);
+    border-radius: 16px 16px 0 0;
 }
 
 /* Table styles */
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    background: #fff8f2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(139, 92, 42, 0.07);
 }
 
 th, td {
-    padding: 0.5rem;
+    padding: 0.75rem 1rem;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #FFDAB9;
 }
 
 th {
-    background-color: #f8f8f8;
+    background-color: #F5CBA7;
+    color: #8B5C2A;
+    font-size: 1.1rem;
 }
 
 /* Form styles */
 form {
     max-width: 600px;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    background: #fff8f2;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(139, 92, 42, 0.07);
+    border: 1px solid #F5CBA7;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 label {
     display: block;
     margin-bottom: 0.5rem;
+    color: #8B5C2A;
+    font-weight: 600;
 }
 
-input[type="text"],
-input[type="number"] {
+/* A single class for all form inputs */
+.form-control {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #F5CBA7;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    background: #ffffff; /* Explicitly set background to white */
+    color: #4B2E05;
+}
+
+select.form-control {
+    /* Styles specific to select dropdowns if needed */
+    background: #fff8f2; /* Keep original background for dropdowns */
 }
 
 button, 
 input[type="submit"] {
-    padding: 0.5rem 1rem;
-    background-color: #0066cc;
-    color: white;
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(90deg, #F5CBA7 0%, #8B5C2A 100%);
+    color: #fff8f2;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 2px 6px rgba(139, 92, 42, 0.08);
+    transition: background 0.2s, color 0.2s, transform 0.1s;
 }
 
 button:hover,
 input[type="submit"]:hover {
-    background-color: #0052a3;
+    background: linear-gradient(90deg, #8B5C2A 0%, #F5CBA7 100%);
+    color: #FFDAB9;
+    transform: translateY(-2px) scale(1.04);
 }
 
-/* Links */
-a {
-    color: #0066cc;
+/* Personality */
+h2, h3 {
+    font-family: 'Segoe Script', 'Comic Sans MS', cursive, sans-serif;
+    color: #8B5C2A;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.08rem;
+}
+
+ul {
+    margin: 1rem 0 1rem 1.5rem;
+    font-size: 1.08rem;
+}
+
+/* Add a little fun */
+header h1:after {
+    content: ' 🎮';
+    font-size: 1.5rem;
+}
+
+.action-view {
+    color: #4285F4;
+    font-weight: bold;
     text-decoration: none;
 }
-
-a:hover {
+.action-edit {
+    color: #34A853;
+    font-weight: bold;
+    text-decoration: none;
+}
+.action-delete {
+    color: #EA4335;
+    font-weight: bold;
+    text-decoration: none;
+}
+.action-view:hover,
+.action-edit:hover,
+.action-delete:hover {
     text-decoration: underline;
+    opacity: 0.85;
+}
+
+.header-user .nav-button {
+    background: #fff;
+    color: #4B2E05;
+    border: 1px solid #8B5C2A;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.header-user .nav-button:hover {
+    background: #8B5C2A;
+    color: #fff;
+    transform: none;
+}
+
+/* Add this new style for the featured content box */
+.featured-content {
+    background: #fff8f2;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    min-height: 200px;
+    box-shadow: 0 4px 12px rgba(139, 92, 42, 0.1);
+    border: 1px solid #F5CBA7;
+}
+
+/* Main content container */
+.main-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.user-info-box, .page-content-box {
+    background: #fff8f2;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(139, 92, 42, 0.07);
+    border: 1px solid #F5CBA7;
+}
+
+.user-info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* User Greeting */
+.user-greeting-container {
+    margin-bottom: 0; /* Remove margin from container */
+}
+
+.user-greeting {
+    font-size: 1rem;
+    color: #4B2E05;
+    font-weight: 500;
+}
+
+/* Logout form spacing */
+.logout-form {
+    margin-bottom: 0; /* Remove margin from form */
+}
+
+.button-logout {
+    background: linear-gradient(to bottom, #D8B785, #C4A26C);
+    border: 1px solid #B08D57;
+    color: #4B2E05;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button-logout:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+
+h1 {
+    /* ... existing code ... */
 } 

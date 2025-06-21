@@ -1,0 +1,42 @@
+@model GameFinder.Models.User
+
+@{
+    ViewData["Title"] = "User Details";
+    var userGames = ViewBag.UserGames as IEnumerable<GameFinder.Models.Game>;
+}
+
+<h2>@Model.Username's Game Collection</h2>
+<hr />
+
+@if (userGames != null && userGames.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Platform</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var game in userGames)
+            {
+                <tr>
+                    <td>@game.Title</td>
+                    <td>@game.Genre?.Name</td>
+                    <td>@game.Platform?.Name</td>
+                    <td>@game.Rating</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>This user has no games in their collection yet.</p>
+}
+
+<div>
+    <a asp-action="Index">Back to User List</a>
+</div> 

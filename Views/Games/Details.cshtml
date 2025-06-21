@@ -1,8 +1,32 @@
 @model GameFinder.Models.Game
+@using Microsoft.AspNetCore.Mvc.Rendering
 
-<h2>Game Details</h2>
-<p>Title: @Model.Title</p>
-<p>Genre: @Model.Genre</p>
-<p>Platform: @Model.Platform</p>
-<p>Rating: @Model.Rating</p>
-<p><a href="/Games">Back to List</a></p>
+<h2>@Model.Title</h2>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Genre</dt>
+        <dd class="col-sm-10">@Model.Genre?.Name</dd>
+        <dt class="col-sm-2">Platform</dt>
+        <dd class="col-sm-10">@Model.Platform?.Name</dd>
+        <dt class="col-sm-2">Rating</dt>
+        <dd class="col-sm-10">@Model.Rating</dd>
+    </dl>
+</div>
+<hr />
+
+<h4>Add to a User's Collection</h4>
+<form asp-controller="Users" asp-action="AddToCollection" method="post">
+    <input type="hidden" name="gameId" value="@Model.Id" />
+    <div class="form-group">
+        <label for="userId">Select User:</label>
+        <select name="userId" class="form-control" asp-items="@(new SelectList(ViewBag.Users, "Id", "Username"))">
+            <option value="">-- Select User --</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Add to Collection</button>
+</form>
+
+<div class="mt-3">
+    <a asp-action="Index">Back to List</a>
+</div>
